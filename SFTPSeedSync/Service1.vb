@@ -339,7 +339,7 @@ Public Class SFTPSeedSync
             wh.Add("X-Api-Key", AppConfig.SonarrAPIKey)
             wr.Headers = wh
             wr.Method = "POST"
-            Dim postData As String = String.Format("{{name:'downloadedepisodesscan','path':'{0}'}}", localPath.Replace("\", "\\"))
+            Dim postData As String = String.Format("{{name:'downloadedepisodesscan','path':'{0}'}}", localPath.Replace("\", "\\").Replace("'", "\'"))
             LogIT.Trace(postData)
             Dim byteArray As Byte() = Encoding.UTF8.GetBytes(postData)
             wr.ContentType = "application/x-www-form-urlencoded"
@@ -363,7 +363,7 @@ Public Class SFTPSeedSync
             wh.Add("X-Api-Key", AppConfig.RadarrAPIKey)
             wr.Headers = wh
             wr.Method = "POST"
-            Dim postData As String = String.Format("{{name:'DownloadedMoviesScan','path':'{0}'}}", localPath.Replace("\", "\\"))
+            Dim postData As String = String.Format("{{name:'DownloadedMoviesScan','path':'{0}'}}", localPath.Replace("\", "\\").Replace("'", "\'"))
             LogIT.Trace(postData)
             Dim byteArray As Byte() = Encoding.UTF8.GetBytes(postData)
             wr.ContentType = "application/x-www-form-urlencoded"

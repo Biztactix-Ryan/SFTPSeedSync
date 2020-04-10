@@ -45,51 +45,31 @@ The default Config File contains all you need for Sonarr and Radarr from an FTP 
 ```
 
 **Server** - Just the Server URL
-
 **Username** - Server Username
-
 **Password** - Server Password
 
 
 **ServerType** - Options for this are FTP|SFTP|SCP|WebDdav|S3
-
 **FTPMode** - Options for this are Passive|Active
-
 **FTPSecure** - Options for this are None|Implicit|Explicit
 
 
 **IgnoreSSHorTLSKey** - Options are True|False - This just ignores SSL issues
-
 **PortNumber** - FTP/SFTP Port
-
 
 **CleanupMonths** - How long before we remove the data from the list of seen files and directories **Not Implemented**
 
-
 **TempPath** - This is where the downloads will go initially, this prevents sonarr or Radarr from grabbing them halfway down
 
-
-**MaxThreads** - This is how many downloads will happen simultanously 
-
+**MaxThreads** - This is how many downloads will happen simultanously
 **WindUpTime** - How many seconds to wait before grabbing the next file
 
-
 **SonarrAPIKey** - This is the Sonarr API Key found in the Settings of Sonarr
-
 **SonarrBaseURL** - Your Sonarr BaseURL - this is where we send the api requests
-
 **SonarrServerPath** - Where your Sonarr downloads should be living after completetion I recommend utilizing the move when complete and then monitor that folder here
-
 **SonarrLocalPath** - Where you want the Videos downloaded to
 
-
 **RadarrAPIKey** - This is the Radarr API Key found in the Settings of Radarr
-
 **RadarrBaseURL** - Your Radarr BaseURL - this is where we send the api requests
-
 **RadarrServerPath** - Where your Radarr downloads should be living after completetion I recommend utilizing the move when complete and then monitor that folder here
-
 **RadarrLocalPath** - Where you want the Videos downloaded to
-
-
-
